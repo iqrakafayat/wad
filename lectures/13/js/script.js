@@ -27,10 +27,27 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
+
+
     /*Write your code here */
 }
 
 function displayCurrentQuestion() {
+    var question=document.getElementById("question");
+    var answers=document.getElementById("choice-list");
+    question.innerText=questions[currentQuestion].question;
+    answers.innerHTML=" ";
+    for(i=0; i<questions[currentQuestion].choices.length;i++)
+    {
+        answers.innerHTML+="<li" + "<input type = 'radio' name= 'Cjoices' value = ' questions[currentQuestion].choices[i]'>" + questions[currentQuestion].choices[i] + "</li>";
+
+    }
+    if(document.querySelector("input[type=radio]:checked"))
+
+    {
+
+    }
+
     /*Write your code here */
 }
 
