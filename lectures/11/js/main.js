@@ -3,12 +3,14 @@
 //============================================
 
 
-/*var todos = [];
+/* this code allows to add all the entered data in a 1 line separated by comma*/
+
+var todos = [];
 function add() {
     var task = document.getElementById("task").value;
     todos.push(task);
     document.getElementById('todos').innerText = todos;
-}*/
+}
 
 
 //============================================
@@ -16,7 +18,9 @@ function add() {
 //============================================
 
 
-/*var todos = [];
+/* this code allows the entered text to enter on every next line. and because of loop it is also getting the old all data with the new enrtered data */
+
+var todos = [];
 function add() {
     var task = document.getElementById('task').value;
     todos.push(task);
@@ -34,15 +38,15 @@ function show() {
         ul.appendChild(li);
     }
     document.getElementById('todos').appendChild(ul);
-}*/
+}
 
 
 //============================================
 //-----------  STEP - 3 ----------------------
 //============================================
 
+/* this code handles the redundancy of last loop making it efficient by only getting the present text from entered engine and with every entered text displaying the box for delete */
 
-/*
 function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
@@ -84,7 +88,7 @@ function show() {
     document.getElementById('todos').appendChild(ul);
 }
 show();
-*/
+
 
 
 
@@ -92,8 +96,9 @@ show();
 //-----------  STEP - 4 ----------------------
 //============================================
 
+/* this code is getting the last state means the entered data with the deletion box but in this code user can delete the any entered data */
 
-/*function getTodos() {
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -162,8 +167,7 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
-
+show();
 
 
 
